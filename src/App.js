@@ -1,10 +1,5 @@
-
-
-
 import React,{ useEffect, useState } from "react";
 import PokemonThumbnail from "./Components/PokemonThumbnail";
-
-
 function App() {
   const [allPokemons,setAllPokemons] = useState([]);
   const [loadPoke,setLoadPoke] = useState('https://pokeapi.co/api/v2/pokemon?limit=20');
@@ -58,7 +53,7 @@ function App() {
                  />
             )}
        </div>
-       <button className="load-more" onClick={()=>getAllPokemons()}>More Pokemons</button>
+       <button className="load-more" onClick={()=>getAllPokemons()}>More Pokemons: </button>
      </div>
     </div>
   );
